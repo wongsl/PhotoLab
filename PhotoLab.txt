@@ -1,0 +1,14 @@
+headers and make files are pretty much the same as the slides.
+headerfiles have the declarations of the functions and corresponding parameters.
+also headerfiles have constants and variables declared.
+the make file has both the PhotoLabTest and PhotoLab, where PhotoLab can be run normally.
+PhotoLabTest on the other hand only runs auto test, testing all functions.
+Overlay reads a new file/image and stores into a temp array.
+that array is read through each pixel making sure the RGB values are not white.
+if they are not white they replace the pixel in the original picture's array
+posterize first turns all numbers before target digits to 1. 
+then it targets target bit to be anded with 0 while all others bits are 1 so it does not change
+noise, uses a random generator, scans through only a percentage of the image and turns the pixel white
+tiltshift/surprise, blurs the image with blur logarithm  replacing only pixels not in the offset/tiltshift area. 
+PhotoLab runs only the printmenu. 
+
